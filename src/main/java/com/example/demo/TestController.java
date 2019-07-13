@@ -4,15 +4,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/test")
 public class TestController {
 
-    @RequestMapping("/test")
+    @RequestMapping("/a")
     public String aaaa(){
 
         return "1";
     }
 
-    @RequestMapping("/test1")
+    @RequestMapping("/b")
     public String aaaa1(){
 
         return "2";
